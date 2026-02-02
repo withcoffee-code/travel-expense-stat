@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>여행 공동경비 정산</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h2>✈️ 여행 공동경비 정산</h2>
+
+<section>
+  <h3>참여자</h3>
+  <input id="participants" placeholder="예: A,B,C,D">
+</section>
+
+<section>
+  <h3>환율</h3>
+  <input id="rates" placeholder="KRW:1,USD:1350,JPY:9.1">
+</section>
+
+<section>
+  <h3>지출 입력</h3>
+  <textarea id="expenses" rows="6"
+  placeholder="날짜,항목,결제자,통화,금액,참여자들,메모
+2026-03-01,식당,A,USD,120,A,B,저녁"></textarea>
+</section>
+
+<button onclick="submitData()">정산하고 엑셀 다운로드</button>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
